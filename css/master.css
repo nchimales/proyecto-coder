@@ -1,0 +1,447 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: rgb(243, 243, 243);
+}
+.seccion, .header-inner, .footer-inner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.seccion, .header .footer {
+    padding: 0 3%;
+}
+.seccion{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header, .footer{
+    background-color: white;
+    width: 100%;
+    padding: 0 5% 5% 5%;
+}
+.header-inner{
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    flex-direction: column;
+}
+.logo{
+    width: 200px;
+}
+.banner{
+    display: none;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.image-wrapper{
+    /*width: 100%;*/
+    background-image: url(../img/banner-index.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+.info-banner{
+    width: 40%;
+    margin-left: 10%;
+}
+.info-banner h2{
+    color: white;
+}
+.call-to-action{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 70%;
+    text-align: center;
+    margin-left: -10px;
+    min-width: 140px;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+.navbar{
+    /*display: flex;
+    flex-direction: column;*/
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    row-gap: 20px;
+    width: 100%;
+}
+.navbar a{
+    /*margin-left: 20px;*/
+    font-weight: 600;
+}
+h2{
+    margin: 20px 0;
+}
+.footer{
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-inner h4{
+    margin-bottom: 10px;
+    /*margin-left: 10px;*/
+}
+.redes-footer{
+    margin-top: 20px;
+}
+.icono{
+    padding: 5px;
+}
+.icono img{
+    width: 35px;
+}
+
+/* Catalogo */
+.product-slider{
+    display: grid;
+    column-gap: 2%;
+    row-gap: 20px;
+    grid-template-columns: 60% 60% 60%;
+    overflow-x: scroll;
+    width: 100%;
+}
+.product-wrap{
+    display: grid;
+    row-gap: 20px;
+    column-gap: 2%;
+    grid-template-columns: 49% 49%;
+    width: 100%;
+}
+/*.product-wrap, .product-slider{
+    padding-left: 20px;
+    margin-top: 30px;
+}*/
+.cards-categorias{
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+.img-catalogo{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.info-individual{
+    min-height: 60px;
+}
+.info-individual p{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.boton-ver-producto{
+    margin-top: 20px;
+    background-color: rgb(176, 137, 255);
+    height: 40px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+}
+.boton-ver-producto a{
+    width: 100%;
+    text-align: center;
+}
+.boton-ver-producto a span{
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.product-slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .product-slider {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+/* Nosotros */
+.nosotros-inner{
+    margin: auto;
+
+}
+.img-nosotros{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Contacto */
+.contacto-inner{
+    margin: auto;
+}
+.contacto-inner p{
+    margin-bottom: 30px;
+    /*width: 50%;*/
+}
+.metodos-de-contacto{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    row-gap: 40px;
+}
+.formulario-outer{
+    width: 100%;
+    max-width: 520px;
+}
+.formulario{
+    max-width: 425px;
+}
+.input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: thin solid rgba(0, 0, 0, 0.5);
+}
+.boton-enviar{
+    width: 50%;
+    height: 40px;
+    background-color: rgb(176, 137, 255);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+}
+.metodos-de-contacto h3{
+    margin-bottom: 20px;
+}
+.telefono{
+    margin-bottom: 20px;
+}
+.datoContacto{
+    display: flex;
+    align-items: center;
+}
+.datoContacto img{
+    width: 25px;
+}
+.datoContacto a{
+    margin-left: 20px;
+}
+/* Termina pagina de contacto */
+
+
+/* Pagina de producto */
+.contenedor-producto-outer{
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+    border-top: 5px #f7d003 solid;
+    border-bottom: 5px #f7d003 solid;
+}
+.contenedor-titulo-mobile{
+    margin-bottom: 20px;
+}
+.titulo-producto{
+    font-size: 20px;
+}
+.articulo, .material{
+    font-size: 14px;
+}
+.info-producto{
+    margin: 30px 0;
+}
+.info-producto h4 {
+    margin-bottom: 10px;
+}
+.descripcion-producto{
+    font-size: 16px;
+    max-width: 600px;
+}
+.product-image-wrapper{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+.img-producto{
+    width: 100%;
+}
+.boton-solicitar-info{
+    margin: 30px auto auto auto;
+    background-color: rgb(176, 137, 255);
+    height: 40px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+    max-width: 375px;
+}
+.boton-solicitar-info a{
+    width: 100%;
+    text-align: center;
+}
+.boton-solicitar-info a span{
+    color: white;
+    font-weight: 600;
+}
+.desktop, .desktop-flex{
+    display: none;
+}
+/* Termina pagina de producto */
+
+/* hover botones */
+.boton-solicitar-info:hover, .boton-ver-producto:hover{
+    background-color: rgb(189, 159, 250);
+}
+.navbar a:hover{
+    color: rgb(189, 159, 250);
+}
+
+
+/* media queries */
+
+@media (min-width: 375px){
+    .banner{
+        display: block;
+    }
+}
+@media (min-width: 768px) {
+    .header{
+        padding: 0 5%;
+    }
+    .header-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .redes-footer{
+        margin: 0;
+    }
+    .navbar {
+        display: flex;
+        width: auto;
+    }
+    .navbar a{
+        margin-left: 20px;
+    }
+
+    /* banner */
+    .image-wrapper{
+        height: 350px;
+    }
+    .info-banner{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 5%;
+        row-gap: 20px;
+    }
+    .info-banner h2{
+        font-size: 30px;
+    }
+    .call-to-action{
+        margin-left: 0;
+    }
+
+    /* secciones producto */
+    .product-slider{
+        display: flex;
+        column-gap: 20px;
+    }
+    .product-wrap{
+        grid-template-columns: auto auto auto;
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+    .cards-categorias{
+        padding: 15px;
+    }
+    .info-individual{
+        min-height: 70px;
+    }
+    .info-individual p{
+        font-size: 16px;
+    }
+    .boton-ver-producto a span{
+        font-size: 16px;
+    }
+
+    /* Nosotros */
+    .nosotros-inner{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        column-gap: 20px;
+    }
+    .nosotros-inner p{
+        width: 50%;
+    }
+    .img-nosotros{
+        width: 50%;
+    }
+
+    /* Contacto */
+    .metodos-de-contacto {
+        justify-content: space-around;
+    }
+
+    /* pagina producto */
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    .desktop-flex{
+        display: flex;
+    }
+    .contenedor-producto-outer{
+        padding: 5%;
+
+    }
+    .contenedor-producto-inner{
+        display: flex;
+        column-gap: 30px;
+    }
+    .boton-solicitar-info{
+        margin: 20px 0;
+    }
+    .info-producto{
+        margin: 0;
+    }
+    .info-producto h2{
+        margin: 0;
+    }
+
+}
+@media (min-width: 1024px){
+    .cards-categorias{
+        padding: 25px;
+    }
+    .logo{
+        width: 300px;
+    }
+    .image-wrapper{
+        height: 400px;
+    }
+
+    /* pagina producto */
+    
+}
+
