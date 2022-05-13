@@ -1,0 +1,39 @@
+.header{
+    background: white;
+}
+.banner{
+    display: none;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.image-wrapper{
+    background-image: url(../img/banner-index.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+.info-banner{
+    width: 40%;
+    margin-left: 10%;
+
+    h2 {
+        color: white;
+    }
+}
+/*.info-banner h2{
+    color: white;
+}*/
+.call-to-action{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 70%;
+    text-align: center;
+    margin-left: -10px;
+    min-width: 140px;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+

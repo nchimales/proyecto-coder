@@ -1,0 +1,138 @@
+@media (min-width: 375px){
+    .banner{
+        display: block;
+    }
+}
+@media (min-width: 768px) {
+    .header{
+        padding: 0 5%;
+    }
+    .footer-inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .redes-footer{
+        margin: 0;
+    }
+
+    /* banner */
+    .image-wrapper{
+        height: 350px;
+    }
+    .info-banner{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 5%;
+        row-gap: 20px;
+    
+        h2{
+            font-size: 30px;    
+        }
+    }
+    /*.info-banner h2{
+        font-size: 30px;
+    }*/
+
+    .call-to-action{
+        margin-left: 0;
+    }
+
+    /* secciones producto */
+    .product-slider{
+        display: flex;
+        column-gap: 20px;
+    }
+    .product-wrap{
+        grid-template-columns: auto auto auto;
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+    .cards-categorias{
+        padding: 15px;
+    }
+    .info-individual{
+        min-height: 70px;
+    
+        p {
+            font-size: 16px;    
+        }
+    }
+    /*.info-individual p{
+        font-size: 16px;
+    }*/
+    .boton-ver-producto a span{
+        font-size: 16px;
+    }
+
+    /* Nosotros */
+    .nosotros-inner{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        column-gap: 20px;
+    
+        p{
+            width: 50%;
+        }
+    }
+    /*.nosotros-inner p{
+        width: 50%;
+    }*/
+    .img-nosotros{
+        width: 50%;
+    }
+
+    /* Contacto */
+    .metodos-de-contacto {
+        justify-content: space-around;
+    }
+
+    /* pagina producto */
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    .desktop-flex{
+        display: flex;
+    }
+    .contenedor-producto-outer{
+        padding: 5%;
+
+    }
+    .contenedor-producto-inner{
+        display: flex;
+        column-gap: 30px;
+    }
+    .boton-solicitar-info{
+        margin: 20px 0;
+    }
+    .info-producto{
+        margin: 0;
+    
+        h2{
+            margin: 0;
+        }
+    }
+    /*.info-producto h2{
+        margin: 0;
+    }*/
+
+}
+@media (min-width: 1024px){
+    .cards-categorias{
+        padding: 25px;
+    }
+    .logo{
+        width: 300px;
+    }
+    .image-wrapper{
+        height: 400px;
+    }
+
+    /* pagina producto */
+    
+}
