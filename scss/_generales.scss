@@ -25,3 +25,22 @@ h2{
     margin: 20px 0;
     font-weight: 600!important;
 }
+.boton {
+    background-color: $buttons-background; //Crear variable
+    height: $buttons-height; // 
+    border-radius: $buttons-radius; // 
+    width: 100%; // 
+    display: flex; //
+    align-items: center; //
+    box-shadow: $buttons-shadow; //Crear variable
+
+    a {
+        width: 100%;//
+        text-align: center;//
+
+        span {
+            color: white; // 
+            font-weight: $buttons-font-weight; //
+        }
+    }
+}

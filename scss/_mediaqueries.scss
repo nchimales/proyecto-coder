@@ -1,9 +1,9 @@
-@media (min-width: 375px){
+@media screen and (min-width: 375px){
     .banner{
         display: block;
     }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .header{
         padding: 0 5%;
     }
@@ -122,7 +122,7 @@
     }*/
 
 }
-@media (min-width: 1024px){
+@media screen and (min-width: 1024px){
     .cards-categorias{
         padding: 25px;
     }

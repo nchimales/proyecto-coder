@@ -40,35 +40,10 @@
     width: 100%;
 }
 .boton-solicitar-info{
+    @extend .boton;
     margin: 30px auto auto auto;
-    background-color: rgb(176, 137, 255);
-    height: 40px;
-    border-radius: 10px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
     max-width: 375px;
-
-    a{
-        width: 100%;
-        text-align: center;
-    
-        span {
-            color: white;
-            font-weight: 600;
-        }
-    }
 }
-/*.boton-solicitar-info a{
-    width: 100%;
-    text-align: center;
-}
-
-.boton-solicitar-info a span{
-    color: white;
-    font-weight: 600;
-}*/ 
 
 .desktop, .desktop-flex{
     display: none;
